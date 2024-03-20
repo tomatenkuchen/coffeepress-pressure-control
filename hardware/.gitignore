@@ -1,5 +1,7 @@
-*-backup
+*-backups
 *.bck
 *.kicad_prl
 *-cache
 *.lck
+*-cache
+\#auto_saved_files\#
