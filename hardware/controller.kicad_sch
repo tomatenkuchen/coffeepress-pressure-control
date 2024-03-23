@@ -777,6 +777,268 @@
 				)
 			)
 		)
+		(symbol "Sensor_Pressure:LPS28DFW"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -11.43 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "LPS28DFW"
+				(at -11.176 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Sensor_Pressure:ST_LPS28DFW"
+				(at 1.27 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/lps28dfw.pdf"
+				(at 1.27 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "MEMS nano pressure sensor, 260-4060 hPa, absolute digital output baromeeter, 24 bit, I2C, 0.32 Pa noise rms"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mems absolute baromeeter spi i2c pressure"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "ST*LPS28DFW*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LPS28DFW_0_1"
+				(rectangle
+					(start -10.16 10.16)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -6.35 1.27)
+					(radius 2.6162)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 0) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.524) (xy -6.35 -4.064)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -5.334 1.524) (xy -6.096 2.286) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "LPS28DFW_1_1"
+				(pin bidirectional line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "SDI" input line)
+					(alternate "SDI/SDO" bidirectional line)
+				)
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "SA0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "SDO" output line)
+				)
+				(pin input clock
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "SPC" input clock)
+				)
+				(pin output line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "INT_DRDY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "PAD2LID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_BJT:BC848"
 			(pin_names
 				(offset 0) hide)
@@ -1089,6 +1351,18 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
+		(at 44.45 158.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33c0f23d-fd05-4f52-b659-fdb177506a71")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
 		(at 147.32 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1135,9 +1409,9 @@
 		)
 		(uuid "50db213a-035d-4429-82f8-b065ce934dcd")
 	)
-	(hierarchical_label "pressure"
+	(hierarchical_label "GND"
 		(shape input)
-		(at 116.84 83.82 180)
+		(at 44.45 184.15 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1145,7 +1419,7 @@
 			)
 			(justify right)
 		)
-		(uuid "600aa6fe-808e-46b3-a23d-98c92a6252f6")
+		(uuid "a35e372f-e231-4aea-b722-f8aca326e09e")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1170,6 +1444,18 @@
 			(justify right)
 		)
 		(uuid "bd6c3ca3-a080-4c5e-97f8-772789a802f0")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 57.15 163.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d278a567-d9ab-4167-b190-2c50334f78c6")
 	)
 	(hierarchical_label "+5V"
 		(shape input)
@@ -1230,6 +1516,18 @@
 			(justify right)
 		)
 		(uuid "de5f7cea-4b56-48bd-a74f-93b9e2e1e0c1")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 57.15 166.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dfb559a0-0998-4a45-b94b-3bbd3fd723c6")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape input)
@@ -1375,6 +1673,93 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Pressure:LPS28DFW")
+		(at 44.45 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "450b4e93-0d69-400c-965e-7d9f8acc95ee")
+		(property "Reference" "U1"
+			(at 33.02 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LPS28DFW"
+			(at 33.02 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Sensor_Pressure:ST_LPS28DFW"
+			(at 45.72 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lps28dfw.pdf"
+			(at 45.72 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "MEMS nano pressure sensor, 260-4060 hPa, absolute digital output baromeeter, 24 bit, I2C, 0.32 Pa noise rms"
+			(at 44.45 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1be7579f-e323-4879-a62e-28ae0ccec980")
+		)
+		(pin "3"
+			(uuid "ab56215c-2597-4470-80cf-85a8009baf13")
+		)
+		(pin "2"
+			(uuid "1fdfb111-cc5b-4e14-8345-ce67d11482dd")
+		)
+		(pin "1"
+			(uuid "e0a7c38c-bb25-46e9-980c-1cf35114ca73")
+		)
+		(pin "5"
+			(uuid "9761a58c-10b8-44bd-8262-2061f588f9fd")
+		)
+		(pin "6"
+			(uuid "ad17160f-6083-426b-a246-fb5f3ec32bbb")
+		)
+		(pin "7"
+			(uuid "41ca405c-75ed-44ea-9315-bcbedceb8a7c")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
+					(reference "U1")
 					(unit 1)
 				)
 			)

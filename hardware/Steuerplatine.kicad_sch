@@ -364,16 +364,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 58.42) (xy 198.12 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "004e30cd-7bda-4b69-a99d-985c1c5371c3")
-	)
-	(wire
-		(pts
 			(xy 161.29 44.45) (xy 157.48 44.45)
 		)
 		(stroke
@@ -634,16 +624,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 55.88) (xy 199.39 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ffa1032-de29-49aa-9e93-ec056c59d536")
-	)
-	(wire
-		(pts
 			(xy 104.14 34.29) (xy 104.14 55.88)
 		)
 		(stroke
@@ -681,26 +661,6 @@
 			(type default)
 		)
 		(uuid "49ccdc1c-a1b5-409e-85d4-a036ab98562d")
-	)
-	(wire
-		(pts
-			(xy 199.39 55.88) (xy 199.39 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51868a53-fa43-417a-9238-760deecd8bda")
-	)
-	(wire
-		(pts
-			(xy 198.12 121.92) (xy 254 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c76fb94-4193-4c86-9bb3-dd155b9a862d")
 	)
 	(wire
 		(pts
@@ -751,16 +711,6 @@
 			(type default)
 		)
 		(uuid "6af13f10-040e-4333-a678-32e3f6f07874")
-	)
-	(wire
-		(pts
-			(xy 199.39 119.38) (xy 254 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b204042-09ad-473e-803f-a415a7176101")
 	)
 	(wire
 		(pts
@@ -1051,16 +1001,6 @@
 			(type default)
 		)
 		(uuid "f21c4504-4bbc-4cee-8d14-de520370d0d8")
-	)
-	(wire
-		(pts
-			(xy 198.12 58.42) (xy 198.12 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4d970b4-f99d-4fdb-a93d-3c51ba79352c")
 	)
 	(wire
 		(pts
@@ -2017,16 +1957,6 @@
 				(justify left)
 			)
 			(uuid "11db647f-8bca-4e55-889b-32e4ee047627")
-		)
-		(pin "pressure" input
-			(at 190.5 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e6a15751-fb03-495f-b70a-83854e7d5fae")
 		)
 		(pin "I2C_SDA" input
 			(at 190.5 55.88 0)
