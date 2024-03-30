@@ -1222,8 +1222,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 257.81 71.12 0)
-		(mirror y)
+		(at 257.81 73.66 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1231,7 +1230,7 @@
 		(dnp no)
 		(uuid "55abc4b9-ae03-4072-b065-2da202d5a635")
 		(property "Reference" "J2"
-			(at 260.858 73.152 0)
+			(at 260.858 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1239,7 +1238,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 270.764 73.152 0)
+			(at 270.764 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1247,7 +1246,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal"
-			(at 257.81 71.12 0)
+			(at 257.81 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1256,7 +1255,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 71.12 0)
+			(at 257.81 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,7 +1264,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 257.81 71.12 0)
+			(at 257.81 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1418,8 +1417,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 35.56 38.1 0)
-		(mirror x)
+		(at 35.56 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1427,7 +1425,7 @@
 		(dnp no)
 		(uuid "d43bf6d6-8224-4616-8017-ffc480cea72f")
 		(property "Reference" "J1"
-			(at 32.512 36.068 0)
+			(at 32.512 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1435,7 +1433,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 22.606 36.068 0)
+			(at 22.606 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1443,7 +1441,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal"
-			(at 35.56 38.1 0)
+			(at 35.56 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1452,7 +1450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 38.1 0)
+			(at 35.56 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1461,7 +1459,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 35.56 38.1 0)
+			(at 35.56 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
