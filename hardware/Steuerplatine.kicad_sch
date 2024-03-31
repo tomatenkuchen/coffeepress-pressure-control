@@ -344,6 +344,12 @@
 		(color 0 0 0 0)
 		(uuid "df5344c7-4e3a-4921-a691-c9f55074cea3")
 	)
+	(junction
+		(at 219.71 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fac845ba-7e98-454a-8a28-ed80018bef58")
+	)
 	(wire
 		(pts
 			(xy 205.74 73.66) (xy 201.93 73.66)
@@ -356,7 +362,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 24.13) (xy 251.46 24.13)
+			(xy 176.53 24.13) (xy 219.71 24.13)
 		)
 		(stroke
 			(width 0)
@@ -616,7 +622,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 73.66) (xy 252.73 73.66)
+			(xy 232.41 86.36) (xy 252.73 86.36)
 		)
 		(stroke
 			(width 0)
@@ -656,6 +662,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 24.13) (xy 219.71 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f7e7a93-4b86-44f8-ade2-60f9c4b1880e")
+	)
+	(wire
+		(pts
 			(xy 176.53 109.22) (xy 176.53 132.08)
 		)
 		(stroke
@@ -676,7 +692,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 71.12) (xy 252.73 71.12)
+			(xy 245.11 83.82) (xy 252.73 83.82)
 		)
 		(stroke
 			(width 0)
@@ -786,7 +802,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 35.56) (xy 245.11 71.12)
+			(xy 245.11 35.56) (xy 245.11 83.82)
 		)
 		(stroke
 			(width 0)
@@ -823,6 +839,16 @@
 			(type default)
 		)
 		(uuid "de98363f-29fa-46af-aba7-ccb1a16a7a09")
+	)
+	(wire
+		(pts
+			(xy 219.71 24.13) (xy 251.46 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14735f6-8546-4e4b-b49b-d794508dd8d5")
 	)
 	(wire
 		(pts
@@ -1222,7 +1248,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 257.81 73.66 180)
+		(at 257.81 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1230,7 +1256,7 @@
 		(dnp no)
 		(uuid "55abc4b9-ae03-4072-b065-2da202d5a635")
 		(property "Reference" "J2"
-			(at 260.858 71.628 0)
+			(at 260.858 84.328 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1238,7 +1264,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 270.764 71.628 0)
+			(at 270.764 84.328 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1246,7 +1272,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal"
-			(at 257.81 73.66 0)
+			(at 257.81 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1255,7 +1281,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 73.66 0)
+			(at 257.81 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1264,7 +1290,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 257.81 73.66 0)
+			(at 257.81 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1497,8 +1523,8 @@
 		)
 	)
 	(sheet
-		(at 205.74 70.485)
-		(size 26.67 38.735)
+		(at 205.74 69.85)
+		(size 26.67 39.37)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1509,7 +1535,7 @@
 		)
 		(uuid "3bec7522-070b-49c2-9368-07aeb74f76c4")
 		(property "Sheetname" "Triac"
-			(at 205.74 69.7734 0)
+			(at 205.74 69.1384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1553,7 @@
 			)
 		)
 		(pin "TRIAC_OUTPUT" input
-			(at 232.41 73.66 0)
+			(at 232.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,6 +1621,16 @@
 				(justify left)
 			)
 			(uuid "2ffb140f-a1d5-4d5e-8699-6254ca088232")
+		)
+		(pin "+3V3" input
+			(at 219.71 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b6ec8391-a0b2-4957-adcf-ca5c7f92102a")
 		)
 		(instances
 			(project "Steuerplatine"
