@@ -986,12 +986,6 @@
 		(uuid "68a5d3f6-acbb-4537-908b-1719f10d0917")
 	)
 	(junction
-		(at 176.53 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78ac04f3-6924-4d94-a9a7-fde8714ac51b")
-	)
-	(junction
 		(at 138.43 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1026,6 +1020,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef2a1c6e-ea45-4e7e-8463-add065458c02")
+	)
+	(junction
+		(at 176.53 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7718bfd-0c52-497f-a360-4a794d7eaaa1")
 	)
 	(wire
 		(pts
@@ -1136,6 +1136,16 @@
 			(type default)
 		)
 		(uuid "37a90552-478c-44a0-8748-e5b941d7f3b8")
+	)
+	(wire
+		(pts
+			(xy 176.53 78.74) (xy 194.31 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "416b1e26-8ed4-4b87-93ea-a1f9dbb4a640")
 	)
 	(wire
 		(pts
@@ -1349,16 +1359,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 78.74) (xy 194.31 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b815a8cc-ebb3-47f2-a063-209da0851915")
-	)
-	(wire
-		(pts
 			(xy 104.14 86.36) (xy 106.68 86.36)
 		)
 		(stroke
@@ -1507,15 +1507,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 194.31 95.25 270)
+		(at 120.65 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0ed99ead-10d7-4c6d-a0e6-d4d6d366999f")
+		(uuid "0aacabd8-a2f7-48ae-b5a8-92001b544b79")
 		(property "Reference" "D2"
-			(at 195.58 92.71 90)
+			(at 123.19 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1523,15 +1523,15 @@
 			)
 		)
 		(property "Value" "UF4007"
-			(at 195.326 100.33 0)
+			(at 115.57 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 194.31 95.25 0)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 120.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,7 +1540,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 95.25 0)
+			(at 120.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1549,7 +1549,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 194.31 95.25 0)
+			(at 120.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1558,10 +1558,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6b69a15b-a9db-4b2b-aba5-b3498f6dd72c")
+			(uuid "1a26a04a-6396-450b-878e-817bd7e429b3")
 		)
 		(pin "2"
-			(uuid "3752262a-28b3-4a2d-b38f-a7c7749bb22f")
+			(uuid "b7b3cdec-2e6c-41b9-9b62-76187c013b88")
 		)
 		(instances
 			(project "Steuerplatine"
@@ -1843,32 +1843,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 120.65 86.36 180)
+		(lib_id "Device:C_Polarized")
+		(at 184.15 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4783431d-c2d1-4365-9821-4a4e9bcff295")
-		(property "Reference" "D1"
-			(at 121.92 88.9 0)
+		(fields_autoplaced yes)
+		(uuid "4df0cb2a-1f0a-4653-a3f9-c0053e7e3b40")
+		(property "Reference" "C4"
+			(at 187.96 107.0609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "D"
-			(at 118.11 85.09 0)
+		(property "Value" "22u"
+			(at 187.96 109.6009 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 120.65 86.36 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
+			(at 185.1152 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,7 +1880,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 86.36 0)
+			(at 184.15 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1886,7 +1889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 86.36 0)
+			(at 184.15 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,15 +1898,85 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7ba6709-f473-47a7-a7ab-77a67a56b5d7")
+			(uuid "20cf8c19-d6f5-4743-b12a-6081191ce33f")
 		)
 		(pin "2"
-			(uuid "033fadea-c292-443e-9a16-1d87774aab53")
+			(uuid "5c712b38-033f-41d3-943f-713b9029645f")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
-					(reference "D1")
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 210.82 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50b35e43-d2c4-464a-8709-aa7b978f4ae4")
+		(property "Reference" "C5"
+			(at 214.63 107.0609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 214.63 109.6009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
+			(at 211.7852 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1455517d-fa80-4913-8dba-3e6650f53c38")
+		)
+		(pin "2"
+			(uuid "bcfbfbdc-6a69-4f57-b3f1-1c326cbb1832")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -2127,32 +2200,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 176.53 82.55 0)
+		(lib_id "Device:D")
+		(at 194.31 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a1900767-2b16-4ded-bbc4-010357e173b7")
-		(property "Reference" "C2"
-			(at 178.308 80.264 0)
+		(uuid "9ad8ccc6-0657-410f-a325-42fd2594d8a2")
+		(property "Reference" "D1"
+			(at 195.58 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "22u"
-			(at 181.102 82.55 0)
+		(property "Value" "UF4007"
+			(at 195.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 177.4952 86.36 0)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 194.31 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2161,7 +2234,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 82.55 0)
+			(at 194.31 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2170,7 +2243,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 176.53 82.55 0)
+			(at 194.31 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2179,85 +2252,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3558fb6-343d-4b3c-9e19-1edf8e29223d")
+			(uuid "b7f14ef2-a1b6-45f2-b5c4-9720e5a77cae")
 		)
 		(pin "2"
-			(uuid "96e066bb-0b91-4117-885d-9388251f03e2")
+			(uuid "0bbd620c-d2e6-40bc-8fa9-c63562e1c044")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 210.82 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6146b32-970a-4ccc-99dd-7ab07f0d6f27")
-		(property "Reference" "C5"
-			(at 214.63 107.0609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 214.63 109.6009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
-			(at 211.7852 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 210.82 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "72ff6127-8f39-42f2-a101-a2062ffc436d")
-		)
-		(pin "2"
-			(uuid "c774abd9-6453-4403-b070-33b620fc8172")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
-					(reference "C5")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2399,16 +2402,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 184.15 109.22 0)
+		(at 176.53 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bb6ca924-a9e3-4799-b462-75769adc9e86")
-		(property "Reference" "C4"
-			(at 187.96 107.0609 0)
+		(uuid "d4a993fa-3ec5-4c52-8266-224d1f6cc454")
+		(property "Reference" "C2"
+			(at 180.34 80.3909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,8 +2419,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
-			(at 187.96 109.6009 0)
+		(property "Value" "22u"
+			(at 180.34 82.9309 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2426,7 +2429,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
-			(at 185.1152 113.03 0)
+			(at 177.4952 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2435,7 +2438,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 109.22 0)
+			(at 176.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,7 +2447,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 109.22 0)
+			(at 176.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2453,15 +2456,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2734ade5-67f0-44fe-8948-5f1f51ffd5ad")
+			(uuid "e2ef30bb-0421-453d-8856-b44a335f55d6")
 		)
 		(pin "2"
-			(uuid "4b3e695b-3fe7-49df-919b-558af2added2")
+			(uuid "13248a48-1243-45ad-a2d9-c3862bebb79c")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2561,7 +2564,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 176.53 95.25 0)
 			(effects
 				(font
