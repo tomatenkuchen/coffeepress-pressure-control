@@ -464,23 +464,23 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 97.79) (xy 134.62 97.79)
+			(xy 148.59 90.17) (xy 163.83 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f68c824-3520-4cf7-a6f2-1a3e34a3f5a1")
+	)
+	(wire
+		(pts
+			(xy 119.38 97.79) (xy 123.19 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4ff19f11-278d-46d4-bdcd-ce5507e35b64")
-	)
-	(wire
-		(pts
-			(xy 148.59 90.17) (xy 154.94 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64b3cdbf-478f-459e-9b94-af4734241764")
 	)
 	(wire
 		(pts
@@ -494,17 +494,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 90.17) (xy 163.83 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a7c3994-ca81-47a4-9640-ff71c00f10a0")
-	)
-	(wire
-		(pts
-			(xy 132.08 90.17) (xy 134.62 90.17)
+			(xy 119.38 90.17) (xy 134.62 90.17)
 		)
 		(stroke
 			(width 0)
@@ -512,9 +502,19 @@
 		)
 		(uuid "b5c61b4a-b720-4628-a3a5-64ac9c297b72")
 	)
+	(wire
+		(pts
+			(xy 130.81 97.79) (xy 134.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc7ed96-63b5-4787-9e00-e5dcc82d4528")
+	)
 	(hierarchical_label "AC_N_IN"
 		(shape input)
-		(at 132.08 97.79 180)
+		(at 119.38 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -526,7 +526,7 @@
 	)
 	(hierarchical_label "AC_L_IN"
 		(shape input)
-		(at 132.08 90.17 180)
+		(at 119.38 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -631,7 +631,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 158.75 90.17 90)
+		(at 127 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -639,23 +639,23 @@
 		(dnp no)
 		(uuid "b9c78b72-9a1f-43f2-b453-a3ee3c0dead3")
 		(property "Reference" "F1"
-			(at 157.226 88.392 90)
+			(at 125.476 95.504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "7A"
-			(at 160.274 88.392 90)
+		(property "Value" "10A"
+			(at 127 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_2512_6332Metric"
-			(at 158.75 91.948 90)
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Schurter_CQM_Inline_P20.60x5.00mm_D1.00mm_Horizontal"
+			(at 127 99.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -664,7 +664,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 90.17 0)
+			(at 127 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -673,7 +673,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 90.17 0)
+			(at 127 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)

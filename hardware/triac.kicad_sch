@@ -886,16 +886,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 88.9) (xy 35.56 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fafa8c4-40f8-41c7-bc16-8f1466b31fca")
-	)
-	(wire
-		(pts
 			(xy 201.93 86.36) (xy 201.93 71.12)
 		)
 		(stroke
@@ -996,7 +986,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 93.98) (xy 158.75 96.52)
+			(xy 35.56 104.14) (xy 35.56 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e5adb31-1c8e-4151-ab89-980bdb6e7605")
+	)
+	(wire
+		(pts
+			(xy 158.75 87.63) (xy 158.75 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1023,16 +1023,6 @@
 			(type default)
 		)
 		(uuid "51785832-0f31-4b87-9841-ca00d58d8bc5")
-	)
-	(wire
-		(pts
-			(xy 27.94 93.98) (xy 27.94 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "523803fe-f603-41c4-a735-a12e9a8713ca")
 	)
 	(wire
 		(pts
@@ -1066,16 +1056,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 99.06) (xy 35.56 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dd181db-1588-44e3-a4e2-93749517f4a3")
-	)
-	(wire
-		(pts
 			(xy 189.23 96.52) (xy 193.04 96.52)
 		)
 		(stroke
@@ -1093,16 +1073,6 @@
 			(type default)
 		)
 		(uuid "61c4f187-742f-4ede-a9f7-cb12e131c576")
-	)
-	(wire
-		(pts
-			(xy 27.94 104.14) (xy 27.94 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6973d5bf-e619-415d-bfb3-6c317d31806c")
 	)
 	(wire
 		(pts
@@ -1256,7 +1226,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 71.12) (xy 158.75 86.36)
+			(xy 158.75 71.12) (xy 158.75 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1316,16 +1286,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 83.82) (xy 27.94 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db3ad545-fb57-4e99-9f46-6ef5206326ec")
-	)
-	(wire
-		(pts
 			(xy 152.4 100.33) (xy 154.94 100.33)
 		)
 		(stroke
@@ -1336,23 +1296,13 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 109.22) (xy 35.56 114.3)
+			(xy 35.56 111.76) (xy 35.56 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df8f4100-9119-4ed6-8e91-517b46e87b99")
-	)
-	(wire
-		(pts
-			(xy 38.1 83.82) (xy 35.56 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3f777a2-47aa-4352-95b6-1b6826dd8507")
 	)
 	(wire
 		(pts
@@ -1526,7 +1476,7 @@
 	)
 	(hierarchical_label "AC_L"
 		(shape input)
-		(at 38.1 83.82 0)
+		(at 35.56 101.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2143,7 +2093,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 158.75 90.17 0)
+		(at 158.75 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2151,7 +2101,7 @@
 		(dnp no)
 		(uuid "56565105-d11a-4926-8fc3-c8aceaad464a")
 		(property "Reference" "R36"
-			(at 161.29 88.8999 0)
+			(at 161.29 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,7 +2110,7 @@
 			)
 		)
 		(property "Value" "0R01"
-			(at 158.75 92.71 90)
+			(at 158.75 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +2119,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 156.972 90.17 90)
+			(at 156.972 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +2128,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 90.17 0)
+			(at 158.75 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +2137,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 90.17 0)
+			(at 158.75 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2205,142 +2155,6 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "R36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 31.75 93.98 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6fbf9667-9392-4680-9e3f-a766f73cbfd3")
-		(property "Reference" "R46"
-			(at 31.75 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 95.758 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb18289b-bcee-489c-be18-928728b93067")
-		)
-		(pin "2"
-			(uuid "9f750c72-b85a-485e-b953-1c3bbfb98624")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 31.75 83.82 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "70c83d07-a91d-43e0-aa63-07197b5198c2")
-		(property "Reference" "R44"
-			(at 31.75 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f6218d2-944c-4ccb-ab29-92e654169965")
-		)
-		(pin "2"
-			(uuid "b2286ffb-766d-4388-95bb-fec95731fa8b")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -2426,74 +2240,6 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 31.75 104.14 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7f1ffbc9-d27b-427a-a88d-1c46cd2df76c")
-		(property "Reference" "R48"
-			(at 31.75 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 105.918 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5491b0e8-2e40-4d14-abbb-1027b2ada768")
-		)
-		(pin "2"
-			(uuid "82753c3c-6175-4050-9c23-69d27e908be9")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -2730,32 +2476,33 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 88.9 270)
-		(mirror x)
+		(at 35.56 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b1f24771-ad26-4e90-9a3d-ecadfa209847")
-		(property "Reference" "R45"
-			(at 31.75 86.36 90)
+		(uuid "b1e435a7-ee23-435b-8ea8-9ea18f8df6fe")
+		(property "Reference" "R6"
+			(at 37.084 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "47k"
-			(at 31.75 88.9 90)
+		(property "Value" "270k"
+			(at 35.56 110.236 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 90.678 90)
+		(property "Footprint" "Resistor_SMD:R_MELF_MMB-0207"
+			(at 33.782 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,7 +2511,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 88.9 0)
+			(at 35.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,93 +2519,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 31.75 88.9 0)
+		(property "Description" "Resistor"
+			(at 35.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "8982706c-8334-4503-9673-58033f872580")
 		)
 		(pin "2"
-			(uuid "441ad885-09fc-4b80-b376-f3b72e4fcf3e")
+			(uuid "9169f44f-68dd-4c19-a56c-3ad985bedfac")
+		)
+		(pin "1"
+			(uuid "5a246b4e-055b-467a-b6ef-d585444f941a")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 31.75 109.22 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bc5f1d9a-8bde-41f7-9a09-2093e185388d")
-		(property "Reference" "R49"
-			(at 31.75 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 110.998 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc2f46fa-788d-4a4d-90ba-194c9f35a0f5")
-		)
-		(pin "2"
-			(uuid "22d406b4-7345-4e30-a95c-d8918cb11024")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R49")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3195,74 +2874,6 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "R52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 31.75 99.06 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6911d36-7fa9-4e39-8711-e33118a77df9")
-		(property "Reference" "R47"
-			(at 31.75 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 100.838 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11495b34-a32f-4795-972b-99b7c12cc67e")
-		)
-		(pin "2"
-			(uuid "40a90370-077a-4e37-b9dc-8ec9dbd5a6da")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R47")
 					(unit 1)
 				)
 			)

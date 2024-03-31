@@ -450,7 +450,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 101.6) (xy 111.76 99.06)
+			(xy 147.32 81.28) (xy 147.32 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb4918a-b54f-49e9-9f88-276e45cd22ef")
+	)
+	(wire
+		(pts
+			(xy 147.32 93.98) (xy 147.32 91.44)
 		)
 		(stroke
 			(width 0)
@@ -460,7 +470,7 @@
 	)
 	(hierarchical_label "ZEROCROSSING"
 		(shape input)
-		(at 111.76 100.33 0)
+		(at 147.32 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -472,7 +482,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 119.38 106.68 0)
+		(at 154.94 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -484,7 +494,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 104.14 106.68 180)
+		(at 139.7 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -496,7 +506,7 @@
 	)
 	(hierarchical_label "AC_L"
 		(shape input)
-		(at 111.76 53.34 90)
+		(at 147.32 81.28 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -508,7 +518,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAT54SW")
-		(at 111.76 106.68 180)
+		(at 147.32 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -517,7 +527,7 @@
 		(fields_autoplaced yes)
 		(uuid "130617e7-b1d2-4b24-bd20-be4d5b256c16")
 		(property "Reference" "D11"
-			(at 111.76 110.49 0)
+			(at 147.32 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -525,7 +535,7 @@
 			)
 		)
 		(property "Value" "BAT54SW"
-			(at 111.76 113.03 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -533,7 +543,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 109.855 109.855 0)
+			(at 145.415 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -543,7 +553,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
-			(at 114.808 106.68 0)
+			(at 150.368 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -552,7 +562,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 106.68 0)
+			(at 147.32 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -580,31 +590,33 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 111.76 87.63 0)
+		(at 147.32 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "133f7f23-126c-46a8-813f-99c26a030a2b")
-		(property "Reference" "R30"
-			(at 114.3 86.36 90)
+		(uuid "d360b895-b5b8-4f29-a3cb-c1d1d3cb2728")
+		(property "Reference" "R7"
+			(at 148.844 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "47k"
-			(at 111.76 87.63 90)
+		(property "Value" "270k"
+			(at 147.32 89.916 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 87.63 90)
+		(property "Footprint" "Resistor_SMD:R_MELF_MMB-0207"
+			(at 145.542 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,7 +625,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 87.63 0)
+			(at 147.32 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -621,360 +633,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 111.76 87.63 0)
+		(property "Description" "Resistor"
+			(at 147.32 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "cc93f007-24fc-4560-8d9b-382b73dac292")
 		)
 		(pin "2"
-			(uuid "4533b621-0074-45b5-ae0f-355436cd7169")
+			(uuid "ae8b353a-97ce-4dbe-ac46-fe125d3b0d63")
+		)
+		(pin "1"
+			(uuid "01fb7c58-97f2-48dd-9335-75014195532b")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "18a38bca-10a4-410d-956d-57611e1a3e6f")
-		(property "Reference" "R31"
-			(at 114.3 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 111.76 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7a2e124-d8d0-4908-b061-c1c3b079724e")
-		)
-		(pin "2"
-			(uuid "6a3bc792-d194-4785-a1bc-7737dd386d85")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6668d8bb-4cf0-45b2-99ce-92f77fbbe464")
-		(property "Reference" "R28"
-			(at 114.3 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 111.76 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf1bd527-b008-4ff8-8784-c4f257cac534")
-		)
-		(pin "2"
-			(uuid "c20f6651-081f-4441-b0db-bfec0f2e09c2")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b24fce97-6eac-4380-844b-00389731fe2b")
-		(property "Reference" "R27"
-			(at 114.3 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 111.76 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "236dcc2b-5caa-45bb-8fe6-4fd345a78c9e")
-		)
-		(pin "2"
-			(uuid "51699f19-97ce-44ac-9c4d-10be1a8b6528")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e16bd137-6097-4fc8-9bdb-c18f98ba9613")
-		(property "Reference" "R29"
-			(at 114.3 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 111.76 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cbaf668f-0383-40a2-9f37-90090eb9157e")
-		)
-		(pin "2"
-			(uuid "a36d35b7-aa2e-4747-bda8-b9b2fc78eafa")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e95e7ee4-67b3-4d92-aba4-bc3ea892d668")
-		(property "Reference" "R26"
-			(at 114.3 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 111.76 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e188c7b6-4c63-45b6-bff0-6ce27b753e78")
-		)
-		(pin "2"
-			(uuid "d0cfb487-bc29-48df-bdf8-62d5f03fb00a")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/07760232-15e4-46f9-95b3-fc11511709d6"
-					(reference "R26")
+					(reference "R7")
 					(unit 1)
 				)
 			)

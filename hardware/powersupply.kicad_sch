@@ -950,6 +950,18 @@
 		(uuid "388494c6-ca61-4382-a339-e653764eef9b")
 	)
 	(junction
+		(at 210.82 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f5c0c18-505a-4c68-8046-367216f443d4")
+	)
+	(junction
+		(at 210.82 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4344d353-fe02-46ac-b714-63393fabe265")
+	)
+	(junction
 		(at 163.83 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1057,6 +1069,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 104.14) (xy 210.82 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2419dc9a-7a03-491c-8055-ee36512d8bf6")
+	)
+	(wire
+		(pts
 			(xy 194.31 91.44) (xy 194.31 86.36)
 		)
 		(stroke
@@ -1074,6 +1096,16 @@
 			(type default)
 		)
 		(uuid "2a9369a0-2424-4735-9e50-f73883eba97f")
+	)
+	(wire
+		(pts
+			(xy 210.82 104.14) (xy 217.17 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e111327-7527-4778-9526-2038aaf2b70e")
 	)
 	(wire
 		(pts
@@ -1104,6 +1136,16 @@
 			(type default)
 		)
 		(uuid "37a90552-478c-44a0-8748-e5b941d7f3b8")
+	)
+	(wire
+		(pts
+			(xy 194.31 104.14) (xy 199.39 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "429a3c78-dc13-4458-b84e-cd08c5fa52cf")
 	)
 	(wire
 		(pts
@@ -1167,13 +1209,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 114.3) (xy 200.66 114.3)
+			(xy 210.82 114.3) (xy 217.17 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "63f7e7b5-d6d3-4d9b-90ee-cc9497c432b0")
+		(uuid "6633700f-6245-4c68-9a89-e113e0b13b1c")
 	)
 	(wire
 		(pts
@@ -1184,6 +1226,16 @@
 			(type default)
 		)
 		(uuid "6d043145-bd30-49a4-9551-c831d6d1677a")
+	)
+	(wire
+		(pts
+			(xy 184.15 114.3) (xy 210.82 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e633e6b-4ee6-4efb-a8a0-900551582fc9")
 	)
 	(wire
 		(pts
@@ -1227,6 +1279,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 104.14) (xy 210.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91069429-e346-460a-8216-ea182002af6b")
+	)
+	(wire
+		(pts
 			(xy 162.56 86.36) (xy 163.83 86.36)
 		)
 		(stroke
@@ -1254,6 +1316,16 @@
 			(type default)
 		)
 		(uuid "9943af46-247d-4e93-ba21-08dfbd034c5f")
+	)
+	(wire
+		(pts
+			(xy 210.82 113.03) (xy 210.82 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bf92839-7d37-476f-832f-f4a01a748837")
 	)
 	(wire
 		(pts
@@ -1294,16 +1366,6 @@
 			(type default)
 		)
 		(uuid "c03a5355-4f07-4c0b-95fe-569e102f0c42")
-	)
-	(wire
-		(pts
-			(xy 194.31 104.14) (xy 200.66 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1393a1d-5f53-4083-8ca4-5677c73c3c48")
 	)
 	(wire
 		(pts
@@ -1421,7 +1483,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 200.66 114.3 0)
+		(at 217.17 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1433,7 +1495,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape input)
-		(at 200.66 104.14 0)
+		(at 217.17 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1669,7 +1731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D10.0mm_P5.00mm_Fastron_07P"
+		(property "Footprint" "Inductor_SMD:L_Wuerth_WE-XHMI-8080"
 			(at 163.83 95.25 0)
 			(effects
 				(font
@@ -2014,7 +2076,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2mH"
+		(property "Value" "1m"
 			(at 132.08 87.63 90)
 			(effects
 				(font
@@ -2022,7 +2084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC"
+		(property "Footprint" "Inductor_SMD:L_Wuerth_WE-XHMI-8080"
 			(at 132.08 86.36 0)
 			(effects
 				(font
@@ -2126,6 +2188,76 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 210.82 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6146b32-970a-4ccc-99dd-7ab07f0d6f27")
+		(property "Reference" "C5"
+			(at 214.63 107.0609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220u"
+			(at 214.63 109.6009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 211.7852 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72ff6127-8f39-42f2-a101-a2062ffc436d")
+		)
+		(pin "2"
+			(uuid "c774abd9-6453-4403-b070-33b620fc8172")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -2466,6 +2598,73 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 203.2 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa283b8f-248d-4832-9c37-9644f6ae26f0")
+		(property "Reference" "L3"
+			(at 200.66 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1m"
+			(at 203.2 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Wuerth_WE-XHMI-8080"
+			(at 203.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1c56844-e7ed-435a-a057-91800c0fbb87")
+		)
+		(pin "2"
+			(uuid "6d808216-7e3f-418d-b38d-beb7704e0ade")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/c42b7df1-fc74-4864-a9e3-b6ebdfdb24fb"
+					(reference "L3")
 					(unit 1)
 				)
 			)

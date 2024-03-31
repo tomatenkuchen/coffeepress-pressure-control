@@ -284,7 +284,7 @@
 				)
 			)
 		)
-		(symbol "Seeed-ESP32C3_1"
+		(symbol "MCU_Seeed_ESP32C3:Seeed-ESP32C3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -349,7 +349,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Seeed-ESP32C3_1_1_1"
+			(symbol "Seeed-ESP32C3_1_1"
 				(rectangle
 					(start -12.7 15.24)
 					(end 12.7 -15.24)
@@ -1800,7 +1800,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Seeed-ESP32C3_1")
 		(lib_id "MCU_Seeed_ESP32C3:Seeed-ESP32C3")
 		(at 132.08 88.9 0)
 		(unit 1)
@@ -1809,8 +1808,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a2a08b42-f31a-4765-b729-253314200fc3")
-		(property "Reference" "U5"
+		(uuid "4ff1c23b-84f9-4315-986b-2541f96a77d2")
+		(property "Reference" "U3"
 			(at 136.8141 68.58 0)
 			(effects
 				(font
@@ -1828,7 +1827,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Module:MCU_Seeed_ESP32C3_HandSolder"
+		(property "Footprint" "RF_Module:MCU_Seeed_ESP32C3"
 			(at 132.842 117.094 0)
 			(effects
 				(font
@@ -1855,79 +1854,79 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "771062b4-c703-4df7-bb25-c8424ac64987")
-		)
-		(pin "14"
-			(uuid "0b53163c-d8c0-4a25-9b15-38459187e0d8")
-		)
-		(pin "18"
-			(uuid "3c060824-c375-4528-ac85-c577882223f0")
-		)
-		(pin "17"
-			(uuid "7a3247e9-1cd4-416c-8851-ee74d427f5f1")
-		)
-		(pin "3"
-			(uuid "616e6167-aaa8-4af0-8283-d87e1e63156c")
-		)
-		(pin "10"
-			(uuid "7e63077d-f96a-48ca-82c6-cbba8be659bc")
-		)
-		(pin "13"
-			(uuid "11d8a016-a833-42bc-b15a-660783fecc5a")
-		)
-		(pin "12"
-			(uuid "2249b979-a07a-47cb-9282-7a498fc86615")
-		)
-		(pin "11"
-			(uuid "ece7b86f-d0ce-46fe-99bd-f83b75264441")
-		)
-		(pin "1"
-			(uuid "ccb805be-a0a9-47a0-9a96-4b8d4dbf6091")
-		)
-		(pin "6"
-			(uuid "febd9b78-5647-4b9c-aa14-6c03131f2a36")
-		)
-		(pin "7"
-			(uuid "69e6a06b-5457-421b-940c-1dfcfa685d6d")
+		(pin "19"
+			(uuid "9b0fd4e4-4a69-41fb-ade9-e6a0c7f0f152")
 		)
 		(pin "4"
-			(uuid "363553b1-0b77-459b-ba86-495349e872e5")
-		)
-		(pin "21"
-			(uuid "9edbb8df-a91e-49d0-bf7f-435872cc8b8d")
+			(uuid "03ea078f-24da-48bf-94f7-48c2e9867777")
 		)
 		(pin "20"
-			(uuid "5ea5718d-9f3f-489e-9fc8-39de6d8c7d8c")
+			(uuid "4fdcf010-61d5-42da-87e8-4b05cb2a1deb")
 		)
-		(pin "19"
-			(uuid "d5a82fb7-4cc3-42fb-88c1-8c76af2cec73")
-		)
-		(pin "2"
-			(uuid "ba31dfa9-6012-4ada-812f-d52017facd1c")
-		)
-		(pin "23"
-			(uuid "f00c496b-90a9-43ae-a0e2-bfd3ba898f32")
-		)
-		(pin "16"
-			(uuid "f5b1e602-66e2-40a0-8327-6a15ed0627c8")
-		)
-		(pin "5"
-			(uuid "dd0222cf-e9ab-4dfb-a27c-2c5ef526cebe")
-		)
-		(pin "9"
-			(uuid "d7aede55-0840-48cb-a756-efd65f8db09a")
+		(pin "17"
+			(uuid "f61ed0e3-7d8c-4115-8bc6-bc6dbb8044fb")
 		)
 		(pin "22"
-			(uuid "57f42b55-3e26-437d-9097-0061b707cfb0")
+			(uuid "f15b5cf0-087e-458a-a32a-8f19ee46684d")
+		)
+		(pin "3"
+			(uuid "387818da-24ac-49bb-a1be-fa1580670802")
+		)
+		(pin "2"
+			(uuid "3091cbbb-4dc6-4697-b0a6-eb79d76c7f2f")
+		)
+		(pin "18"
+			(uuid "b3d7633e-2f55-4ce6-b8d8-504ba35b2fad")
+		)
+		(pin "23"
+			(uuid "43b85cc7-e781-4d54-87f3-b022db23f023")
+		)
+		(pin "6"
+			(uuid "09cdc006-6bb9-4190-aea2-dbf2f8e48461")
+		)
+		(pin "21"
+			(uuid "e6299b7b-d6b8-4631-aaea-e5fc5834e3cf")
+		)
+		(pin "14"
+			(uuid "fa678953-bc12-4a2b-b83b-9090d9b8b3d7")
+		)
+		(pin "1"
+			(uuid "415fb218-9835-4113-9159-81d1a847311e")
+		)
+		(pin "13"
+			(uuid "57e96dc9-6e46-4f99-9f3d-671c41984ed5")
+		)
+		(pin "12"
+			(uuid "17674509-2b6f-4bbe-889b-f5335ffb8095")
+		)
+		(pin "11"
+			(uuid "c51dbf18-fc04-4799-a647-0f5bc7f0191e")
+		)
+		(pin "10"
+			(uuid "70f990e2-c902-4f0a-b37e-682cff9e50b6")
+		)
+		(pin "16"
+			(uuid "a50e409b-70b4-4b5b-9e96-ffbf4025ef9d")
+		)
+		(pin "5"
+			(uuid "353ecbb9-c2fa-4448-aaa6-7aad59e44f37")
+		)
+		(pin "7"
+			(uuid "03d55905-82f7-4ba2-a654-5d7b4dc080f0")
+		)
+		(pin "9"
+			(uuid "7803bff9-040b-4dc5-8476-2161e1975496")
 		)
 		(pin "15"
-			(uuid "f823df84-5a77-46eb-8367-8b668cf7314f")
+			(uuid "4595f95e-1fac-45bd-a88c-3ec386d21875")
+		)
+		(pin "8"
+			(uuid "2f4a3810-d026-4cdb-8331-29ed0714175f")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
-					(reference "U5")
+					(reference "U3")
 					(unit 1)
 				)
 			)
