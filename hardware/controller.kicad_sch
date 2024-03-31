@@ -1039,14 +1039,14 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:BC848"
+		(symbol "Transistor_BJT:BC847BS"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1054,8 +1054,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC848"
-				(at 5.08 0 0)
+			(property "Value" "BC847BS"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1063,28 +1063,16 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1093,7 +1081,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Small Signal Transistor"
+			(property "Description" "100mA IC, 45V Vce, Dual NPN/NPN Transistors, SOT-363"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1102,7 +1090,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "NPN/NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1111,7 +1107,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC848_0_1"
+			(property "ki_fp_filters" "SOT?363*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BC847BS_0_1"
+				(polyline
+					(pts
+						(xy 0.635 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -1172,11 +1189,11 @@
 					)
 				)
 			)
-			(symbol "BC848_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
+			(symbol "BC847BS_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1191,10 +1208,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "E"
+					(name "B1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1212,7 +1229,27 @@
 				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "C"
+					(name "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "BC847BS_2_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1227,8 +1264,50 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
+	)
+	(junction
+		(at 209.55 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e7e8081-d40f-4dbc-8a56-3355ee9f410d")
 	)
 	(junction
 		(at 132.08 107.95)
@@ -1238,13 +1317,23 @@
 	)
 	(wire
 		(pts
-			(xy 254 27.94) (xy 254 28.575)
+			(xy 198.12 96.52) (xy 209.55 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3868d794-3fd3-414a-8901-b870c7f75258")
+		(uuid "178f3447-e24d-4447-8971-a34e70693abe")
+	)
+	(wire
+		(pts
+			(xy 209.55 96.52) (xy 252.73 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281a6979-0223-4d73-97e7-dbc3349e3d61")
 	)
 	(wire
 		(pts
@@ -1278,16 +1367,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 36.195) (xy 254 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baa478de-8202-4bb2-8e30-0d87b3eb0b56")
-	)
-	(wire
-		(pts
 			(xy 132.08 107.95) (xy 134.62 107.95)
 		)
 		(stroke
@@ -1317,13 +1396,13 @@
 		(uuid "e297a279-30c2-434e-a334-dd41ed913e23")
 	)
 	(label "SUMMER"
-		(at 269.24 41.91 0)
+		(at 194.31 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "314b356b-daeb-410f-bd89-bd1072c99662")
 	)
@@ -1337,6 +1416,17 @@
 			(justify right bottom)
 		)
 		(uuid "355bc39a-e512-4cba-9563-987c41e7aece")
+	)
+	(label "triac"
+		(at 237.49 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96d1ec43-c319-46c9-84df-4e58a758e1ca")
 	)
 	(label "pressure_interrupt"
 		(at 57.15 173.99 0)
@@ -1370,6 +1460,17 @@
 			(justify right bottom)
 		)
 		(uuid "d9d548c4-d2c5-4f7b-ab8b-8f768b38ffe3")
+	)
+	(label "triac"
+		(at 116.84 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8aafce9-880c-42ae-a617-6652d43e9e02")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1505,13 +1606,13 @@
 	)
 	(hierarchical_label "TRIAC_GATE"
 		(shape input)
-		(at 116.84 101.6 180)
+		(at 252.73 86.36 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "d9a71dff-54ed-4928-a9b5-102be7456d22")
 	)
@@ -1529,7 +1630,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape input)
-		(at 254 22.86 180)
+		(at 204.47 78.74 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1541,7 +1642,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 254 46.99 270)
+		(at 198.12 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1577,7 +1678,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 256.54 25.4 0)
+		(at 207.01 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1586,25 +1687,25 @@
 		(fields_autoplaced yes)
 		(uuid "0db6e2d5-08b1-4919-a293-61e4c755ffe8")
 		(property "Reference" "BZ1"
-			(at 260.35 24.1299 0)
+			(at 210.82 74.1748 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 260.35 26.6699 0)
+			(at 210.82 76.7148 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Buzzer_Beeper:Buzzer_15x7.5RM7.6"
-			(at 255.905 22.86 90)
+			(at 204.47 76.835 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,7 +1714,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.905 22.86 90)
+			(at 204.47 76.835 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1622,7 +1723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 25.4 0)
+			(at 207.01 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1640,73 +1741,6 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
 					(reference "BZ1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 265.43 41.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "147e9886-1cc5-40ef-a224-bf9ae6301303")
-		(property "Reference" "R25"
-			(at 266.7 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4k7"
-			(at 265.43 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 265.43 40.132 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 265.43 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d2e35c3-1a85-43c0-8cba-1a127930d354")
-		)
-		(pin "2"
-			(uuid "63ba0855-2c2c-40f8-a021-f178e69b9e73")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
-					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -1794,6 +1828,73 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 241.3 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46a4e877-8d4e-45db-8f3a-7f39260e9da3")
+		(property "Reference" "R9"
+			(at 242.57 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 241.3 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 241.3 89.662 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1284b347-e789-4fb9-bda8-b8330cf8ec6d")
+		)
+		(pin "2"
+			(uuid "7fa018c2-80aa-4fda-b3cb-1e66f098bd4e")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -1933,8 +2034,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC847BS")
+		(at 250.19 91.44 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a3e61cc-67e0-4988-8fe1-2d08ddb78bb2")
+		(property "Reference" "Q3"
+			(at 255.27 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC847BS"
+			(at 255.27 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 255.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf"
+			(at 250.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mA IC, 45V Vce, Dual NPN/NPN Transistors, SOT-363"
+			(at 250.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bde6f5a7-3474-44ee-bf55-79941f81946d")
+		)
+		(pin "6"
+			(uuid "8819f63b-4f5d-4796-8216-f08fdaf0bc63")
+		)
+		(pin "1"
+			(uuid "aa7eaf74-3611-4b8e-b838-4f80996d87ac")
+		)
+		(pin "3"
+			(uuid "5f28bff3-9d9c-4dab-bfdf-a6465b477123")
+		)
+		(pin "4"
+			(uuid "80ff7302-2e06-4dfb-86fa-27c10c8f8f8f")
+		)
+		(pin "5"
+			(uuid "5ee9e75c-2510-4784-9588-5c66515426d9")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
+					(reference "Q3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 254 32.385 0)
+		(at 209.55 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1943,7 +2126,7 @@
 		(fields_autoplaced yes)
 		(uuid "be3f32c1-b760-48c6-8bc2-0e40cea5ca1f")
 		(property "Reference" "R34"
-			(at 256.54 31.1149 0)
+			(at 212.09 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1952,7 +2135,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 256.54 33.6549 0)
+			(at 212.09 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1961,7 +2144,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 252.222 32.385 90)
+			(at 207.772 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1970,7 +2153,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 32.385 0)
+			(at 209.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1979,7 +2162,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 32.385 0)
+			(at 209.55 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2003,18 +2186,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC848")
-		(at 256.54 41.91 0)
-		(mirror y)
+		(lib_id "Transistor_BJT:BC847BS")
+		(at 207.01 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e093c11e-7cdc-4b6f-baf7-906b3c767988")
-		(property "Reference" "Q1"
-			(at 251.46 40.6399 0)
+		(uuid "cc075f30-5baf-4e26-8cb6-2f929113748c")
+		(property "Reference" "Q3"
+			(at 212.09 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,8 +2204,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC848"
-			(at 251.46 43.1799 0)
+		(property "Value" "BC847BS"
+			(at 212.09 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,29 +2213,105 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 251.46 43.815 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 212.09 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 256.54 41.91 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf"
+			(at 207.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mA IC, 45V Vce, Dual NPN/NPN Transistors, SOT-363"
+			(at 207.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bde6f5a7-3474-44ee-bf55-79941f81946d")
+		)
+		(pin "6"
+			(uuid "8819f63b-4f5d-4796-8216-f08fdaf0bc63")
+		)
+		(pin "1"
+			(uuid "aa7eaf74-3611-4b8e-b838-4f80996d87ac")
+		)
+		(pin "3"
+			(uuid "5f28bff3-9d9c-4dab-bfdf-a6465b477123")
+		)
+		(pin "4"
+			(uuid "80ff7302-2e06-4dfb-86fa-27c10c8f8f8f")
+		)
+		(pin "5"
+			(uuid "5ee9e75c-2510-4784-9588-5c66515426d9")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 198.12 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea5c991a-0eec-4124-93d6-ba2cf0649d73")
+		(property "Reference" "R8"
+			(at 199.39 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 198.12 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 198.12 89.662 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 256.54 41.91 0)
+			(at 198.12 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2062,18 +2320,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe11e92a-1b82-46b3-b490-e0e66d0da0e9")
+			(uuid "4bebff92-9a84-4d76-bc8c-17e98f87d1ef")
 		)
 		(pin "2"
-			(uuid "a0d7e026-be22-48eb-b901-a0ee5ba33810")
-		)
-		(pin "3"
-			(uuid "c88588bc-aba6-4f4e-bbb4-1bc571ad85a9")
+			(uuid "b97a8354-9ab0-4f3f-ac47-b6000d91eae8")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/421ee7c4-2a9c-4e65-b00b-3d6ff22b5783"
-					(reference "Q1")
+					(reference "R8")
 					(unit 1)
 				)
 			)

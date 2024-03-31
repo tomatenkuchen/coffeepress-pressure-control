@@ -379,196 +379,6 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:BC848"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "BC848"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "NPN Small Signal Transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BC848_0_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BC848_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Triac_Thyristor:BTA16-600B"
 			(pin_names
 				(offset 0)
@@ -809,12 +619,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5802dc76-6c4e-4a59-a2d9-98c23de116ae")
-	)
-	(junction
-		(at 142.24 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63ccffc5-b708-4c4b-8ffc-50c4aa0c6d27")
 	)
 	(junction
 		(at 78.74 111.76)
@@ -1126,7 +930,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 127) (xy 142.24 127)
+			(xy 140.97 127) (xy 177.8 127)
 		)
 		(stroke
 			(width 0)
@@ -1153,16 +957,6 @@
 			(type default)
 		)
 		(uuid "97c6345c-2987-4587-aa4b-25178ff1b911")
-	)
-	(wire
-		(pts
-			(xy 142.24 118.11) (xy 142.24 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3af3359-ce3b-4018-9a56-edd902f4f2d5")
 	)
 	(wire
 		(pts
@@ -1213,16 +1007,6 @@
 			(type default)
 		)
 		(uuid "b44ec104-d0ef-4a30-ae45-f9ce80d2afb8")
-	)
-	(wire
-		(pts
-			(xy 142.24 127) (xy 177.8 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfa7cf72-cf22-45b5-bce8-dd9abf46c9e6")
 	)
 	(wire
 		(pts
@@ -1384,16 +1168,6 @@
 		)
 		(uuid "fc2f3f48-7521-4ecb-93b0-de588c0296f9")
 	)
-	(wire
-		(pts
-			(xy 142.24 100.33) (xy 142.24 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd64cc22-144c-4abd-b8ab-2c9a8c008e1b")
-	)
 	(text "ESP32 ADC input is best in a voltage range from 0V to 950mV.\nTherefore, voltage measurement offset needs to be at 475mV.\n"
 		(exclude_from_sim no)
 		(at 50.038 139.446 0)
@@ -1440,7 +1214,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 127 127 180)
+		(at 140.97 127 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1512,7 +1286,7 @@
 	)
 	(hierarchical_label "TRIAC_GATE"
 		(shape input)
-		(at 127 113.03 180)
+		(at 142.24 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2331,82 +2105,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC848")
-		(at 139.7 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b040dce-90c7-4b1f-b624-bdc5694beb06")
-		(property "Reference" "Q3"
-			(at 144.78 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC848"
-			(at 144.78 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 144.78 114.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 139.7 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e4a4fe2-29c2-4d00-82a1-76d165062a06")
-		)
-		(pin "2"
-			(uuid "38733f14-9fc4-4986-aa08-1bb0acf2ab95")
-		)
-		(pin "3"
-			(uuid "41c9abe5-2ea1-4cd1-bfd4-e54deac37087")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 35.56 120.65 0)
 		(mirror y)
@@ -2538,74 +2236,6 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 130.81 113.03 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "be225324-6b56-4b41-9a77-91c12d6ce90f")
-		(property "Reference" "R33"
-			(at 129.54 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4k7"
-			(at 130.81 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 130.81 111.252 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b93ca966-14b9-4379-af37-2cbd4d05e569")
-		)
-		(pin "2"
-			(uuid "96e1b34e-847a-40d7-831a-d23784517a25")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "R33")
 					(unit 1)
 				)
 			)

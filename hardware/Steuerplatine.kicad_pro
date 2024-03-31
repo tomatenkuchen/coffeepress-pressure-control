@@ -543,6 +543,22 @@
       {
         "netclass": "HVHC",
         "pattern": "/N"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(D1-K)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(D3-K)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(U2-D)"
       }
     ]
   },
