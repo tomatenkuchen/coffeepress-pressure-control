@@ -1800,7 +1800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
 			(at 139.3952 99.06 0)
 			(effects
 				(font
@@ -2212,7 +2212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220u"
+		(property "Value" "100u"
 			(at 214.63 109.6009 0)
 			(effects
 				(font
@@ -2221,7 +2221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
 			(at 211.7852 113.03 0)
 			(effects
 				(font
@@ -2416,7 +2416,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220u"
+		(property "Value" "100u"
 			(at 187.96 109.6009 0)
 			(effects
 				(font
@@ -2425,7 +2425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
 			(at 185.1152 113.03 0)
 			(effects
 				(font
@@ -2494,7 +2494,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
 			(at 126.6952 99.06 0)
 			(effects
 				(font

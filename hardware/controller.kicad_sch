@@ -2241,22 +2241,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "bde6f5a7-3474-44ee-bf55-79941f81946d")
+			(uuid "bde6f5a7-3474-44ee-bf55-79941f81946e")
 		)
 		(pin "6"
-			(uuid "8819f63b-4f5d-4796-8216-f08fdaf0bc63")
+			(uuid "8819f63b-4f5d-4796-8216-f08fdaf0bc64")
 		)
 		(pin "1"
-			(uuid "aa7eaf74-3611-4b8e-b838-4f80996d87ac")
+			(uuid "aa7eaf74-3611-4b8e-b838-4f80996d87ad")
 		)
 		(pin "3"
-			(uuid "5f28bff3-9d9c-4dab-bfdf-a6465b477123")
+			(uuid "5f28bff3-9d9c-4dab-bfdf-a6465b477124")
 		)
 		(pin "4"
-			(uuid "80ff7302-2e06-4dfb-86fa-27c10c8f8f8f")
+			(uuid "80ff7302-2e06-4dfb-86fa-27c10c8f8f90")
 		)
 		(pin "5"
-			(uuid "5ee9e75c-2510-4784-9588-5c66515426d9")
+			(uuid "5ee9e75c-2510-4784-9588-5c66515426da")
 		)
 		(instances
 			(project "Steuerplatine"
