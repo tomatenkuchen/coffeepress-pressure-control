@@ -1255,6 +1255,17 @@
 		)
 		(uuid "9cb8f27a-7247-42c3-87cb-cf67cc2aaa78")
 	)
+	(label "v_grid_out"
+		(at 121.92 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1510179-51dc-4179-b92f-a28842f3e75d")
+	)
 	(label "+5V"
 		(at 110.49 59.69 90)
 		(fields_autoplaced yes)
@@ -1265,6 +1276,17 @@
 			(justify left bottom)
 		)
 		(uuid "ecf0afbd-1d80-4644-a2ea-309ffb1af3a4")
+	)
+	(label "i_out"
+		(at 123.19 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3168b9c-2bd4-4525-8609-a8e96b64aa57")
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VSIN")
@@ -1330,7 +1352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "dc=0 ampl=30 f=50 ac=1"
+		(property "Sim.Params" "dc=0 ampl=360 f=50 ac=1"
 			(at 41.91 91.3101 0)
 			(effects
 				(font
@@ -1711,7 +1733,7 @@
 				)
 			)
 		)
-		(property "Value" "6k2"
+		(property "Value" "3k3"
 			(at 120.142 77.47 90)
 			(effects
 				(font
@@ -1878,7 +1900,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.38"
+		(property "Value" "3.9"
 			(at 87.63 70.9901 0)
 			(effects
 				(font
@@ -1976,7 +1998,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.475"
+		(property "Value" "0.43"
 			(at 86.36 117.9801 0)
 			(effects
 				(font
@@ -2074,7 +2096,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50"
+		(property "Value" "33"
 			(at 74.93 91.4399 0)
 			(effects
 				(font
@@ -2323,7 +2345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "280k"
+		(property "Value" "270k"
 			(at 64.77 138.4299 0)
 			(effects
 				(font

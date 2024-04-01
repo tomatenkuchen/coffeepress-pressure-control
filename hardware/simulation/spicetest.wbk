@@ -22,12 +22,7 @@
       "traces": [
         {
           "color": "rgb(228, 26, 28)",
-          "signal": "V(Net-_R4-Pad2_)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(Net-_R8-Pad2_)",
+          "signal": "V(/v_grid_out)",
           "trace_type": 257
         }
       ]
