@@ -559,6 +559,14 @@
       {
         "netclass": "HV",
         "pattern": "Net-(U2-D)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(D2-K)"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "Net-(D2-A)"
       }
     ]
   },
@@ -567,7 +575,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "output/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

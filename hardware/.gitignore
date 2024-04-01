@@ -5,4 +5,4 @@
 *.lck
 *-cache
 \#auto_saved_files\#
-BOM.*
+output/
