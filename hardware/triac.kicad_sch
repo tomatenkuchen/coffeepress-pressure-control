@@ -5,7 +5,7 @@
 	(uuid "09cd8f33-abf8-4a32-b067-67aa7e80c0d4")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:TL082"
+		(symbol "Amplifier_Operational:LMV358"
 			(pin_names
 				(offset 0.127)
 			)
@@ -21,7 +21,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TL082"
+			(property "Value" "LMV358"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -39,7 +39,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl081.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -48,7 +48,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Dual JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8"
+			(property "Description" "Dual Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOIC-8/SSOP-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +65,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dual opamp"
+			(property "ki_keywords" "single opamp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +83,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TL082_1_1"
+			(symbol "LMV358_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -151,7 +151,7 @@
 					)
 				)
 			)
-			(symbol "TL082_2_1"
+			(symbol "LMV358_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -219,7 +219,7 @@
 					)
 				)
 			)
-			(symbol "TL082_3_1"
+			(symbol "LMV358_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -642,6 +642,327 @@
 				)
 			)
 		)
+		(symbol "Diode:BAT54SW"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0.635 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BAT54SW"
+				(at -6.35 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+				(at 1.905 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
+				(at -3.048 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual schottky barrier diode, in series, SOT-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dual schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?323*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAT54SW_0_1"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.27) (xy -3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.27) (xy -1.905 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 1.27) (xy 4.445 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "BAT54SW_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Triac_Thyristor:BTA16-600B"
 			(pin_names
 				(offset 0)
@@ -836,16 +1157,28 @@
 		)
 	)
 	(junction
+		(at 228.6 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13f50216-d887-41e0-bb8c-f7078d893257")
+	)
+	(junction
+		(at 82.55 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "154e0bb7-8e2e-4fa4-abb9-15370bc016e3")
+	)
+	(junction
+		(at 201.93 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18234f2e-2150-4bc6-888d-b1130764ef6c")
+	)
+	(junction
 		(at 193.04 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e2b360e-262f-4939-b733-26effa510e2d")
-	)
-	(junction
-		(at 58.42 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "424fb454-16ed-4f1e-b3e5-787e12ee5cf4")
 	)
 	(junction
 		(at 182.88 91.44)
@@ -858,6 +1191,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b9dead4-849c-45b9-a84d-caa5e994908b")
+	)
+	(junction
+		(at 58.42 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a93eac5-dec5-47c3-bfc6-df5c58bc8d5b")
+	)
+	(junction
+		(at 201.93 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68284d53-b957-4573-83b6-3f56804b4706")
 	)
 	(junction
 		(at 173.99 127)
@@ -882,6 +1227,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d730a8a-d048-44a4-8aa9-05e913a947c9")
+	)
+	(junction
+		(at 54.61 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1c30c76-de4f-4264-a31f-a906d1be1dbe")
 	)
 	(junction
 		(at 158.75 71.12)
@@ -923,7 +1274,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 86.36) (xy 201.93 71.12)
+			(xy 201.93 86.36) (xy 201.93 76.2)
 		)
 		(stroke
 			(width 0)
@@ -953,6 +1304,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 110.49) (xy 82.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb88e0d-7f1e-45af-9fe9-a9e5253f8d30")
+	)
+	(wire
+		(pts
 			(xy 78.74 102.87) (xy 78.74 111.76)
 		)
 		(stroke
@@ -970,6 +1331,16 @@
 			(type default)
 		)
 		(uuid "2284ac4a-a0ed-4218-b085-73aadedbfec9")
+	)
+	(wire
+		(pts
+			(xy 228.6 93.98) (xy 250.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f082715-2dde-4536-98bc-8ac08a8e7113")
 	)
 	(wire
 		(pts
@@ -1083,6 +1454,36 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 76.2) (xy 201.93 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c93c4f-0efc-49c1-b28f-04a3bd2577fb")
+	)
+	(wire
+		(pts
+			(xy 106.68 127) (xy 106.68 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e4c23b-383e-4638-9823-67d8b811c029")
+	)
+	(wire
+		(pts
+			(xy 255.27 76.2) (xy 201.93 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dff580d-8e0c-49b4-9640-500a488a0f0a")
+	)
+	(wire
+		(pts
 			(xy 50.8 114.3) (xy 58.42 114.3)
 		)
 		(stroke
@@ -1093,6 +1494,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 127) (xy 106.68 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77231a61-defe-4a72-830a-1bf6eb8e05ab")
+	)
+	(wire
+		(pts
 			(xy 182.88 91.44) (xy 196.85 91.44)
 		)
 		(stroke
@@ -1100,6 +1511,16 @@
 			(type default)
 		)
 		(uuid "789c94e3-5ef1-429f-91d7-5aef5e461ddb")
+	)
+	(wire
+		(pts
+			(xy 255.27 101.6) (xy 255.27 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80da8b09-a8d6-4b24-987b-cc14d2e21ec1")
 	)
 	(wire
 		(pts
@@ -1133,6 +1554,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 100.33) (xy 106.68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0a8aad7-a7ba-408f-a1b3-23f3976189ec")
+	)
+	(wire
+		(pts
 			(xy 158.75 71.12) (xy 173.99 71.12)
 		)
 		(stroke
@@ -1140,6 +1571,16 @@
 			(type default)
 		)
 		(uuid "a3beeee7-009a-45b5-9952-1c858110b7cf")
+	)
+	(wire
+		(pts
+			(xy 201.93 127) (xy 255.27 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a40f814b-dfe3-4aa2-b837-1f7793f96a33")
 	)
 	(wire
 		(pts
@@ -1163,6 +1604,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 92.71) (xy 228.6 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0fcdb8d-371e-4e53-b450-9d285f8249bb")
+	)
+	(wire
+		(pts
 			(xy 193.04 83.82) (xy 193.04 96.52)
 		)
 		(stroke
@@ -1183,6 +1634,36 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 110.49) (xy 82.55 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3fe34c0-e46f-47a7-87dd-316b3ca6d6f3")
+	)
+	(wire
+		(pts
+			(xy 82.55 111.76) (xy 101.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6782fd9-ae5f-4c2e-b1fa-031852e170e2")
+	)
+	(wire
+		(pts
+			(xy 228.6 92.71) (xy 228.6 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b76d90-a793-4f7f-836b-c76a98ae8c75")
+	)
+	(wire
+		(pts
 			(xy 158.75 71.12) (xy 158.75 80.01)
 		)
 		(stroke
@@ -1200,6 +1681,16 @@
 			(type default)
 		)
 		(uuid "cd6806f8-3c41-49d9-9a55-fde7739621c6")
+	)
+	(wire
+		(pts
+			(xy 255.27 86.36) (xy 255.27 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce566cac-5ac4-4023-b118-8bd9cdc41d79")
 	)
 	(wire
 		(pts
@@ -1391,6 +1882,18 @@
 		)
 		(uuid "6e9ac33a-80ec-44b1-82d4-2b6693316b22")
 	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 106.68 100.33 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74e9e1d0-6b4c-4a55-a77b-f107951a0c2f")
+	)
 	(hierarchical_label "AC_N"
 		(shape input)
 		(at 54.61 90.17 90)
@@ -1417,7 +1920,7 @@
 	)
 	(hierarchical_label "CURRENT_SIG"
 		(shape input)
-		(at 228.6 93.98 0)
+		(at 229.87 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1429,7 +1932,7 @@
 	)
 	(hierarchical_label "VOLTAGE_SIG"
 		(shape input)
-		(at 82.55 111.76 0)
+		(at 83.82 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1868,93 +2371,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL082")
-		(at 204.47 93.98 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4265197b-a874-4ea6-b4d6-41375617d08f")
-		(property "Reference" "U4"
-			(at 203.2 86.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TL082"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_5.3x6.2mm_P1.27mm"
-			(at 204.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl081.pdf"
-			(at 204.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1a5d5db-d80d-435d-91a4-98599234df18")
-		)
-		(pin "2"
-			(uuid "1754ddc3-cd6a-456c-bfe0-36421f8a0261")
-		)
-		(pin "3"
-			(uuid "ee75af31-5c11-4a16-948e-7e5bdb8ef37f")
-		)
-		(pin "5"
-			(uuid "7ee901c0-33d0-4919-9454-6bc10d44197e")
-		)
-		(pin "6"
-			(uuid "2cb63c6b-38a0-4957-8795-242495f480bf")
-		)
-		(pin "7"
-			(uuid "3622828f-fda1-43c6-8b47-84ebcf3570ef")
-		)
-		(pin "4"
-			(uuid "b4a1f480-9d82-4707-b774-62e5b398141b")
-		)
-		(pin "8"
-			(uuid "4a44df8b-aca7-4411-b458-377c4b9c88d7")
-		)
-		(instances
-			(project "Steuerplatine"
-				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "U4")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 50.8 114.3 180)
 		(unit 1)
@@ -2016,6 +2432,91 @@
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "TP5")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LMV358")
+		(at 66.04 111.76 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f1122b7-b7c0-4f3b-93b4-f03c53257463")
+		(property "Reference" "U5"
+			(at 66.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV358"
+			(at 66.04 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOIC-8/SSOP-8"
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "40ed3d0b-c604-4ed0-a8cf-86a0b08e9b80")
+		)
+		(pin "7"
+			(uuid "d5d399cc-c4dc-4805-b162-d7bdaba6e2ee")
+		)
+		(pin "3"
+			(uuid "880491ae-0abb-49c2-af8b-11c6fa04696d")
+		)
+		(pin "2"
+			(uuid "c7c271ec-bd8d-4ce2-8601-e6ad9466a548")
+		)
+		(pin "1"
+			(uuid "b1f5b23c-5ada-4c6f-ab40-1e4ac2a27c4b")
+		)
+		(pin "6"
+			(uuid "f6bb9cbb-4086-42a4-9d80-170bb78b889b")
+		)
+		(pin "4"
+			(uuid "9f05de9c-198e-4a6a-9d94-ea11228bd6f9")
+		)
+		(pin "5"
+			(uuid "1504201d-571b-44cd-9e25-022beb7b4cfd")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
+					(reference "U5")
+					(unit 2)
 				)
 			)
 		)
@@ -2295,31 +2796,31 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL082")
+		(lib_id "Amplifier_Operational:LMV358")
 		(at 204.47 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "739b5b26-762e-43b2-a2b8-c0ec86dd42d0")
-		(property "Reference" "U4"
-			(at 205.74 97.79 0)
+		(uuid "858753c0-d536-41c1-bf5c-66363a8aeff0")
+		(property "Reference" "U5"
+			(at 207.01 90.932 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TL082"
-			(at 207.01 99.695 0)
+		(property "Value" "LMV358"
+			(at 208.534 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -2328,7 +2829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl081.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -2337,7 +2838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOIC-8/SSOP-8"
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -2345,76 +2846,69 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "da1b40dd-8a6f-40b9-9a6c-50c3758cc4f9")
-		)
-		(pin "2"
-			(uuid "67c1e0fb-6230-47a6-ab7e-22842980354a")
-		)
-		(pin "3"
-			(uuid "6da57b8a-dcfe-4d21-a309-a3818a48befb")
-		)
-		(pin "5"
-			(uuid "e334a716-9558-4325-9b89-4ba95472371f")
-		)
-		(pin "6"
-			(uuid "e049e3f2-d745-4140-ac58-19039810d397")
-		)
-		(pin "7"
-			(uuid "58012bb5-fb69-4b31-ade7-ca1af0da8356")
-		)
-		(pin "4"
-			(uuid "5402c69f-6bad-415c-8cf6-f0241f3a9768")
 		)
 		(pin "8"
-			(uuid "b1d86fa3-3550-4498-8ee6-739fffec17af")
+			(uuid "40ed3d0b-c604-4ed0-a8cf-86a0b08e9b80")
+		)
+		(pin "7"
+			(uuid "d5d399cc-c4dc-4805-b162-d7bdaba6e2ee")
+		)
+		(pin "3"
+			(uuid "880491ae-0abb-49c2-af8b-11c6fa04696d")
+		)
+		(pin "2"
+			(uuid "c7c271ec-bd8d-4ce2-8601-e6ad9466a548")
+		)
+		(pin "1"
+			(uuid "b1f5b23c-5ada-4c6f-ab40-1e4ac2a27c4b")
+		)
+		(pin "6"
+			(uuid "f6bb9cbb-4086-42a4-9d80-170bb78b889b")
+		)
+		(pin "4"
+			(uuid "9f05de9c-198e-4a6a-9d94-ea11228bd6f9")
+		)
+		(pin "5"
+			(uuid "1504201d-571b-44cd-9e25-022beb7b4cfd")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL082")
-		(at 66.04 111.76 0)
-		(unit 2)
+		(lib_id "Amplifier_Operational:LMV358")
+		(at 204.47 93.98 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "91ae3c99-0d2f-44e1-b5f5-1c84df039ce8")
-		(property "Reference" "U4"
-			(at 71.755 114.3 0)
+		(uuid "9e1cb554-2b98-4755-af89-912da9e93f77")
+		(property "Reference" "U5"
+			(at 204.978 89.154 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "TL082"
-			(at 71.755 116.205 0)
+		(property "Value" "LMV358"
+			(at 204.978 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-8_5.3x6.2mm_P1.27mm"
-			(at 66.04 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl081.pdf"
-			(at 66.04 111.76 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 204.47 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,8 +2916,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 66.04 111.76 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
+			(at 204.47 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,35 +2925,44 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "1717552a-e485-409a-9262-baad2b75710b")
-		)
-		(pin "2"
-			(uuid "338c5034-0bc1-4c4e-ab65-03b4e532e010")
-		)
-		(pin "3"
-			(uuid "5d3ec31a-ce71-45ad-a72e-ff9ab656bdf9")
-		)
-		(pin "5"
-			(uuid "677048b8-6b39-428d-aa91-cc58ffa4a5ea")
-		)
-		(pin "6"
-			(uuid "c36c6493-0f0c-469b-ad83-8bd5da744a50")
-		)
-		(pin "7"
-			(uuid "4c34304e-9f58-4b98-8c12-14c8491f7009")
-		)
-		(pin "4"
-			(uuid "937decf0-c89d-457c-8f44-d5d31508e78b")
+		(property "Description" "Dual Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOIC-8/SSOP-8"
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "8"
-			(uuid "58f54d73-6f27-4389-b742-7cdfde35c16f")
+			(uuid "40ed3d0b-c604-4ed0-a8cf-86a0b08e9b80")
+		)
+		(pin "7"
+			(uuid "d5d399cc-c4dc-4805-b162-d7bdaba6e2ee")
+		)
+		(pin "3"
+			(uuid "880491ae-0abb-49c2-af8b-11c6fa04696d")
+		)
+		(pin "2"
+			(uuid "c7c271ec-bd8d-4ce2-8601-e6ad9466a548")
+		)
+		(pin "1"
+			(uuid "b1f5b23c-5ada-4c6f-ab40-1e4ac2a27c4b")
+		)
+		(pin "6"
+			(uuid "f6bb9cbb-4086-42a4-9d80-170bb78b889b")
+		)
+		(pin "4"
+			(uuid "9f05de9c-198e-4a6a-9d94-ea11228bd6f9")
+		)
+		(pin "5"
+			(uuid "1504201d-571b-44cd-9e25-022beb7b4cfd")
 		)
 		(instances
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
-					(reference "U4")
-					(unit 2)
+					(reference "U5")
+					(unit 3)
 				)
 			)
 		)
@@ -2596,6 +3099,80 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT54SW")
+		(at 255.27 93.98 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6a21235-6629-44a6-a62f-03c5790752de")
+		(property "Reference" "D5"
+			(at 257.81 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54SW"
+			(at 257.81 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 258.445 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
+			(at 255.27 97.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e70319b-82b5-4a5a-978b-9c83edce6754")
+		)
+		(pin "2"
+			(uuid "8dc7162d-c23d-4790-9d72-fb6e0d676833")
+		)
+		(pin "3"
+			(uuid "ae554f7e-0168-4a8a-8877-70255219152a")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -2863,6 +3440,80 @@
 			(project "Steuerplatine"
 				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
 					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT54SW")
+		(at 106.68 111.76 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e93666a2-a63c-4d44-801a-b2e5d6256453")
+		(property "Reference" "D4"
+			(at 109.22 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54SW"
+			(at 109.22 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 109.855 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
+			(at 106.68 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10e89bd6-ad78-40f0-8d86-bb7b5648fba3")
+		)
+		(pin "2"
+			(uuid "900d5e9d-d159-45d5-baa7-78cc281bb491")
+		)
+		(pin "3"
+			(uuid "046142ac-e8f5-4d90-b31e-b7ff7e4c1509")
+		)
+		(instances
+			(project "Steuerplatine"
+				(path "/ae153005-c1c4-4678-92de-98a47cf88e8d/3bec7522-070b-49c2-9368-07aeb74f76c4"
+					(reference "D4")
 					(unit 1)
 				)
 			)

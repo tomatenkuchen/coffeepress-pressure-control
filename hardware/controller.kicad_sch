@@ -1648,6 +1648,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 91.44) (xy 237.49 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed88e04-9a7a-46fc-841f-ac55c0e4de13")
+	)
+	(wire
+		(pts
 			(xy 129.54 106.68) (xy 129.54 107.95)
 		)
 		(stroke
@@ -2257,7 +2267,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 237.49 91.44 90)
+		(at 233.68 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2265,7 +2275,7 @@
 		(dnp no)
 		(uuid "1c1ea612-01c1-4ade-919b-0c2ed979e320")
 		(property "Reference" "TP8"
-			(at 230.632 91.948 90)
+			(at 226.822 91.948 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2283,7 @@
 			)
 		)
 		(property "Value" "triac"
-			(at 230.378 90.17 90)
+			(at 226.568 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2281,7 +2291,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 237.49 86.36 0)
+			(at 233.68 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2290,7 +2300,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 86.36 0)
+			(at 233.68 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2299,7 +2309,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 237.49 91.44 0)
+			(at 233.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
