@@ -24,18 +24,21 @@ fn main() -> ! {
     let clocks = ClockControl::boot_defaults(system.clock_control).freeze();
 
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
-    let analog_pin = io.pins.gpio1.into_analog();
+    let i_heater_analog_pin = io.pins.gpio0.into_analog();
+    let v_grid_analog_pin = io.pins.gpio1.into_analog();
 
-    // Create ADC instances
+    // get grid voltage input
     let mut adc1_config = AdcConfig::new();
-    let mut adc1_pin = adc1_config.enable_pin(analog_pin, Attenuation::Attenuation11dB);
+    let mut adc0_pin = adc1_config.enable_pin(i_heater_analog_pin, Attenuation::Attenuation11dB);
+    let mut adc1_pin = adc1_config.enable_pin(v_grid_analog_pin, Attenuation::Attenuation11dB);
     let mut adc1 = ADC::new(peripherals.ADC1, adc1_config);
 
     let mut delay = Delay::new(&clocks);
 
     loop {
-        let pin_value: u16 = nb::block!(adc1.read(&mut adc1_pin)).unwrap();
-        println!("ADC reading = {}", pin_value);
+        let i_grid_value: u16 = nb::block!(adc1.read(&mut adc0_pin)).unwrap();
+        let v_grid_value: u16 = nb::block!(adc1.read(&mut adc1_pin)).unwrap();
+        println!("ADC1: v_grid = {}, i_grid = {}",v_grid_value, i_grid_value);
         delay.delay_ms(1000u32);
     }
 }
