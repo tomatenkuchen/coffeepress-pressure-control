@@ -9,6 +9,7 @@ use esp_hal::{
     clock::ClockControl, 
     delay::Delay, 
     gpio::IO, 
+    i2c::I2C,
     peripherals::Peripherals, 
     prelude::*, 
 };
@@ -26,6 +27,17 @@ fn main() -> ! {
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
     let i_heater_analog_pin = io.pins.gpio0.into_analog();
     let v_grid_analog_pin = io.pins.gpio1.into_analog();
+    let i2c_sda_pin = io.pins.gpio4;
+    let i2c_scl_pin = io.pins.gpio5;
+
+    // enable i2c for pressure sensor
+    let mut i2c = I2C::new(
+        peripherals.I2C0,
+        i2c_sda_pin,
+        i2c_scl_pin,
+        100.kHz(),
+        &clocks,
+    );
 
     // get grid voltage input
     let mut adc1_config = AdcConfig::new();
@@ -36,8 +48,13 @@ fn main() -> ! {
     let mut delay = Delay::new(&clocks);
 
     loop {
+        // read adc
         let i_grid_value: u16 = nb::block!(adc1.read(&mut adc0_pin)).unwrap();
         let v_grid_value: u16 = nb::block!(adc1.read(&mut adc1_pin)).unwrap();
+
+        // read i2c
+        let mut pressure_data_raw = [0u8; 8];
+        i2c.read(0x88, &mut pressure_data_raw).ok();
         println!("ADC1: v_grid = {}, i_grid = {}",v_grid_value, i_grid_value);
         delay.delay_ms(1000u32);
     }
