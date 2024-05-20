@@ -35,7 +35,7 @@ fn main() -> ! {
         peripherals.I2C0,
         i2c_sda_pin,
         i2c_scl_pin,
-        100.kHz(),
+        400u32.kHz(),
         &clocks,
     );
 
@@ -53,9 +53,10 @@ fn main() -> ! {
         let v_grid_value: u16 = nb::block!(adc1.read(&mut adc1_pin)).unwrap();
 
         // read i2c
-        let mut pressure_data_raw = [0u8; 8];
-        i2c.read(0x88, &mut pressure_data_raw).ok();
+        let mut pressure_data_raw = [0u8; 1];
+        i2c.write_read(0x5C, &[0x0F], &mut pressure_data_raw).ok();
         println!("ADC1: v_grid = {}, i_grid = {}",v_grid_value, i_grid_value);
+        println!("I2C0 : data array = {:?}", pressure_data_raw);
         delay.delay_ms(1000u32);
     }
 }
