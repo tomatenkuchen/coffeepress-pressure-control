@@ -10,6 +10,11 @@ debug = true
 
 [dependencies]
 esp-hal = { version = "0.16.1", features = ["esp32c3"] }
-esp-backtrace = { version = "0.11.1", features = ["esp32c3", "panic-handler", "exception-handler", "println"] }
+esp-backtrace = { version = "0.11.1", features = [
+  "esp32c3",
+  "panic-handler",
+  "exception-handler",
+  "println",
+] }
 esp-println = { version = "0.9.1", features = ["esp32c3"] }
-
+lps28dfw = "0.1.5"

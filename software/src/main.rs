@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 
-//use core::clone;
+extern crate lps28dfw;
 
 use esp_backtrace as _;
 use esp_hal::{
@@ -35,9 +35,14 @@ fn main() -> ! {
         peripherals.I2C0,
         i2c_sda_pin,
         i2c_scl_pin,
-        400u32.kHz(),
+        100u32.kHz(),
         &clocks,
     );
+
+    // set up pressure sensor
+    let mut p_sens = lps28dfw::LPS28DFW(i2c, lps28dfw::I2CAddress::Low, lps28dfw::OutputDataRate::Hz4, lps28dfw::Averaging::Over4);
+    // check if pressure sensor is alive
+    p_sens.identify();
 
     // get grid voltage input
     let mut adc1_config = AdcConfig::new();
@@ -52,11 +57,10 @@ fn main() -> ! {
         let i_grid_value: u16 = nb::block!(adc1.read(&mut adc0_pin)).unwrap();
         let v_grid_value: u16 = nb::block!(adc1.read(&mut adc1_pin)).unwrap();
 
-        // read i2c
-        let mut pressure_data_raw = [0u8; 1];
-        i2c.write_read(0x5C, &[0x0F], &mut pressure_data_raw).ok();
+        // read pressure sensor
+        let p = p_sens.read_pressure().unwrap();
         println!("ADC1: v_grid = {}, i_grid = {}",v_grid_value, i_grid_value);
-        println!("I2C0 : data array = {:?}", pressure_data_raw);
-        delay.delay_ms(1000u32);
+        println!("I2C0 : data array = {:?}", p);
+        delay.delay_ms(2000u32);
     }
 }
