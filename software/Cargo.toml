@@ -9,8 +9,8 @@ license = "MIT OR Apache-2.0"
 debug = true
 
 [dependencies]
-esp-hal = { version = "0.16.1", features = ["esp32c3"] }
-esp-backtrace = { version = "0.11.1", features = [
+esp-hal = { version = "0.18.0", features = ["esp32c3"] }
+esp-backtrace = { version = "0.12.1", features = [
   "esp32c3",
   "panic-handler",
   "exception-handler",
