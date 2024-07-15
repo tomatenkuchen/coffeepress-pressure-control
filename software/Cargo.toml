@@ -17,4 +17,4 @@ esp-backtrace = { version = "0.12.1", features = [
   "println",
 ] }
 esp-println = { version = "0.9.1", features = ["esp32c3"] }
-lps28dfw = "0.1.5"
+lps28dfw = "0.1.6"
